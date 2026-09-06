@@ -310,9 +310,9 @@ function App() {
                   FILE TOOLS
                 </div>
                 <h1>
-                  File converter<span>.</span>
+                  Convert files<span>. Keep control.</span>
                 </h1>
-                <p>A new format, without the upload. Convert and download right here.</p>
+                <p>Private, on-device conversion for the files you use every day.</p>
               </div>
               <Button variant="outline" className="guide-button" onPress={() => openGuide()}>
                 <Layers2 size={16} />
