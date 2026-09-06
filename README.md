@@ -16,6 +16,9 @@ npm run dev
 npm run build
 ```
 
+Open `http://127.0.0.1:5500` after `npm run dev`. The source `index.html` requires
+Vite and should not be opened directly as a file.
+
 ## GitHub Pages
 
 This repo includes `.github/workflows/pages.yml` for automatic GitHub Pages deployment from the `main` branch.
