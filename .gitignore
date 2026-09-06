@@ -5,6 +5,8 @@ node_modules/
 dist/
 .vite/
 coverage/
+test-results/
+playwright-report/
 
 # Environment and local config
 .env

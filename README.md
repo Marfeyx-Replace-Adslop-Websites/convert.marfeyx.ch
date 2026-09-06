@@ -32,3 +32,28 @@ The Vite config uses relative asset paths (`base: "./"`), and `public/.nojekyll`
 - Data: JSON formatting, JSON to CSV, CSV to JSON.
 - Text: plain text and simple HTML output.
 - ZIP: package one file or extract a ZIP into a new local ZIP bundle.
+
+## Interface
+
+The interface uses HeroUI 3 for its controls, cards, select menus, progress,
+tooltips, format-guide modal, tabs, and accordion. Four adapted 21st.dev / Magic UI
+components supply subtle entrance, border, pattern, and pointer effects. All motion
+respects reduced-motion preferences. Fonts are self-hosted; no analytics or auth
+services were added. See `THIRD_PARTY_NOTICES.md` for component sources and licenses.
+
+The original conversion engine in `src/converter.ts` is unchanged. The page keeps
+the single-file workflow, now with drag-and-drop and disabled controls while busy.
+Changing a file or output format clears the previous result. No conversion history
+or file data is persisted.
+
+## Verification
+
+Run `npm run build` then `npm test`. The Playwright suite uses installed Google
+Chrome by default. To use Playwright Chromium instead, install it with
+`npx playwright install chromium` and set `PLAYWRIGHT_CHANNEL=chromium`.
+
+Tests verify actual image, data, text, and ZIP output contents; download names;
+invalid input recovery; drag-and-drop; the format guide; and responsive layouts.
+The media regression test checks loading/disabled controls and a failed CDN request
+without downloading the large media engine. It does not claim every media codec
+is supported by every browser. Test screenshots are saved under `test-results/`.
