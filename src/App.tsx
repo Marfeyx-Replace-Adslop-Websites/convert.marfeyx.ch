@@ -1,3 +1,4 @@
+import { MarfeyxBrand } from "./brand/MarfeyxBrand";
 import { useEffect, useMemo, useRef, useState, type ChangeEvent, type DragEvent } from "react";
 import {
   Accordion,
@@ -214,14 +215,7 @@ function App() {
         Skip to converter
       </a>
       <aside className="sidebar">
-        <a className="brand" href="./" aria-label="Marfeyx Convert home">
-          <span className="brand-mark">
-            <Layers2 size={23} strokeWidth={1.6} />
-          </span>
-          <span>
-            marfeyx<span className="brand-sub">CONVERT</span>
-          </span>
-        </a>
+        <MarfeyxBrand product="File Converter" />
         <div className="nav-group-label">WORKSPACE</div>
         <nav aria-label="Main navigation" className="main-nav">
           <a className="nav-item selected" href="#converter" aria-current="page">
@@ -274,10 +268,7 @@ function App() {
       <div className="main-shell">
         <header className="topbar">
           <div className="breadcrumbs">
-            <span className="mobile-brand">
-              <Layers2 size={18} />
-              marfeyx
-            </span>
+            <div className="mobile-brand"><MarfeyxBrand product="File Converter" /></div>
             <span className="desktop-crumb">Workspace</span>
             <ChevronRight size={13} />
             <span>File converter</span>
