@@ -301,7 +301,7 @@ function App() {
                   FILE TOOLS
                 </div>
                 <h1>
-                  Convert files<span>. Keep control.</span>
+                  A new format.<span>The same file, reimagined.</span>
                 </h1>
                 <p>Private, on-device conversion for the files you use every day.</p>
               </div>

@@ -4,6 +4,7 @@ import App from "./App";
 import "@fontsource-variable/dm-sans";
 import "./styles.css";
 import "./brand/marfeyx.css";
+import "./workspace.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
